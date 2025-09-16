@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Clock</title>
 
-    <style>
-/* Google Fonts 読み込み */
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-
-/* 全体を囲うコンテナー */
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #15151e;
   display: flex; /* 時計を中央に配置 */
   align-items: center;
@@ -20,7 +17,6 @@
   text-align: center;
 }
 
-/* 時計の共通スタイル */
 .clock {
   font-family: 'Share Tech Mono', monospace;
   color: #daf6ff;
@@ -29,37 +25,24 @@
   text-align: center;
 }
 
-/* 日付のスタイル */
 .clock-date {
   font-size: 1.5rem;
 }
 
-/* 時間のスタイル */
 .clock-time {
   font-size: 2.5rem;
 }
-
-/* 文字サイズ調整
-@media screen and (max-width: 500px) {
-  .clock-date {
-    font-size: 5vw;
-  }
-  .clock-time {
-    font-size: 20vw;
-  }
-} */
-    </style>
+</style>
 </head>
 
 
-
 <body>
-  <div class="container">
-    <div class="clock">
-      <p class="clock-date"></p>
-      <p class="clock-time"></p>
-    </div>
+<div class="container">
+  <div class="clock">
+    <p class="clock-date"></p>
+    <p class="clock-time"></p>
   </div>
+</div>
 
 <script>
 const clock = () => {
