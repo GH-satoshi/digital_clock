@@ -12,9 +12,9 @@
 /* 全体を囲うコンテナー */
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #15151e;
-  display: flex;
+  display: flex; /* 時計を中央に配置 */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -24,7 +24,7 @@
 .clock {
   font-family: 'Share Tech Mono', monospace;
   color: #daf6ff;
-  text-shadow: 0 0 20px #0aafe6;
+  text-shadow: 0 0 20px #0aafe6; /* 文字を発光させる */
   line-height: 0.2;
   text-align: center;
 }
@@ -74,7 +74,7 @@ const clock = () => {
   let date = d.getDate();
   // 曜日を取得
   let dayNum = d.getDay();
-  const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const weekday = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"];
   let day = weekday[dayNum];
   // 時を取得
   let hour = d.getHours();
